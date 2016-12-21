@@ -6,6 +6,8 @@ var bodyParser = require('body-parser')
 var lightco = require('lightco')
 var path = require('path')
 
+var port = process.env.PORT || 3000
+
 /* 全局访问 */
 global.Conf = require('./conf')
 global.Models = require('./models').t
@@ -25,36 +27,8 @@ app.use(bodyParser.json())
 var routes = require('./routes')
 app.use(routes)
 
-
-/* 404 */
-app.use(function(req, res, next) {
-    const ip = Utility.clientIpV4(req)
-    var err = new Error(`Not Found`)
-    err.status = 404
-    next(err)
-})
-
-/* 错误处理-开发环境 */
-if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
-        logger.warn(err)
-        res.status(err.status || 500)
-        res.render('error', {
-            message: err.message,
-            error: err
-        })
-    })
-}
-
-/* 错误处理-生产环境 */
-app.use(function(err, req, res, next) {
-    logger.warn(err)
-    res.status(err.status || 500)
-    res.render('error', {
-        message: err.message,
-        error: {}
-    })
-})
+app.listen(port)
+console.log('Listening on ' + port)
 
 
 

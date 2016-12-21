@@ -1,18 +1,19 @@
 {
   "name": "JNode.api",
-  "main": "./bin/www",
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/dlyt/JNode.git"
   },
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node app.js",
     "test": "mocha test"
   },
   "author": "NB",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "ejs": "^2.5.5",
     "express": "^4.14.0",
     "lightco": "^0.1.7",
     "mysql": "^2.12.0",
