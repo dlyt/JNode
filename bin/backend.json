@@ -1,0 +1,14 @@
+{
+    "apps":[
+		{
+			"name": "backend-01",
+			"script": "bin/www",
+			"watch": false,
+			"env": {
+                "ID": "00",
+				"NODE_ENV": "production",
+				"PORT": 80,
+			}
+		}
+	]
+}

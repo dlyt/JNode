@@ -1,0 +1,12 @@
+{
+  "name": "JNode API Document",
+  "version": "0.1.0",
+  "description": "API",
+  "title": "JNode API",
+  "url" : "http://localhost:3000",
+  "sampleUrl": "http://localhost:3000",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}

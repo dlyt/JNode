@@ -1,9 +1,8 @@
-'use strict'
 
 var conf = {}
 
 conf.db = require('./db')
-conf.promise = require('./promise')
+conf.log = require('./log')
 
 
 module.exports = conf

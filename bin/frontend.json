@@ -1,0 +1,44 @@
+{
+    "apps":[
+		{
+			"name": "frontend-01",
+			"script": "bin/www",
+			"watch": false,
+			"env": {
+                "ID": "01",
+				"NODE_ENV": "production",
+				"PORT": 8001,
+			}
+		},
+		{
+			"name": "frontend-02",
+			"script": "bin/www",
+			"watch": false,
+			"env": {
+                "ID": "02",
+				"NODE_ENV": "production",
+				"PORT": 8002,
+			}
+		},
+		{
+			"name": "frontend-03",
+			"script": "bin/www",
+			"watch": false,
+			"env": {
+                "ID": "03",
+				"NODE_ENV": "production",
+				"PORT": 8003,
+			}
+		},
+		{
+			"name": "frontend-04",
+			"script": "bin/www",
+			"watch": false,
+			"env": {
+                "ID": "04",
+				"NODE_ENV": "production",
+				"PORT": 8004,
+			}
+		}
+	]
+}

@@ -1,46 +1,37 @@
 'use strict'
 
-const lightco = require('lightco')
 const express = require('express')
+const helper = require('../helper')
 const router = express.Router()
 
 
-const { City } = Models
 
-router.route('/city')
+ /**
+  * @api {post} /city 录入城市的相关信息
+  * @apiName 添加城市
+  * @apiGroup City
+  *
+  * @apiParam {String} city 城市名称.
+  *
+  * @apiSuccess {Number} id 城市ID.
+  *
+  * @apiSuccessExample Success-Response:
+  *     HTTP/1.1 200 OK
+  *     {
+  *       "id": 26,
+  *     }
+  * @apiError error 添加城市失败.
+  *
+  * @apiUse Error
+  */
+router.route('/')
   .post((req, res) => {
-    lightco.run(function* ($) {
-      try {
-        if (req.body.city)
-          var city = {city: req.body.city}
-
-        var [err, results] =  yield City.create(city)
-        if (err) throw err
-
-        return res.json(Conf.promise('0', results.city_id))
-
-      } catch (e) {
-        return res.json(Conf.promise('1'))
-      }
-    })
+    helper.city.postCity(req, res)
   })
 
-router.route('/city/:id')
+router.route('/:id')
   .get((req, res) => {
-    lightco.run(function* ($) {
-      try {
-        if (req.params.id)
-          var id = req.params.id
-
-        var [err, results] =  yield City.findById(id)
-        if (err) throw err
-
-        return res.json(Conf.promise('0', results))
-
-      } catch (e) {
-        return res.json(Conf.promise('1'))
-      }
-    })
+    helper.city.getCity(req, res)
   })
 
   .put((req, res) => {

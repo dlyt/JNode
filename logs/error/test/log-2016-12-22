@@ -1,0 +1,24 @@
+[2016-12-22 21:52:41.419] [ERROR] routes-com - ReferenceError: idss is not defined
+    at /Users/yangyss/Desktop/JNode/routes/common.js:36:51
+    at next (native)
+    at /Users/yangyss/Desktop/JNode/node_modules/lightco/index.js:13:27
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[2016-12-22 21:53:09.234] [ERROR] routes-com - ReferenceError: idss is not defined
+    at /Users/yangyss/Desktop/JNode/routes/common.js:36:51
+    at next (native)
+    at /Users/yangyss/Desktop/JNode/node_modules/lightco/index.js:13:27
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[2016-12-22 22:10:28.070] [ERROR] routes-com - ReferenceError: idss is not defined
+    at /Users/yangyss/Desktop/JNode/routes/common.js:36:51
+    at next (native)
+    at /Users/yangyss/Desktop/JNode/node_modules/lightco/index.js:13:27
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[2016-12-22 22:12:06.984] [ERROR] routes-com - ReferenceError: idss is not defined
+    at /Users/yangyss/Desktop/JNode/routes/common.js:36:51
+    at next (native)
+    at /Users/yangyss/Desktop/JNode/node_modules/lightco/index.js:13:27
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
